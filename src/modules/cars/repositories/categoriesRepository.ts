@@ -1,7 +1,8 @@
 import { IcategoryDTO } from "../dtos/IcategoryDTO";
 import { Category } from "../model/category";
+import { ICategoriaRepository } from "./ICategoriaRepository";
 
-class CategoriesRepository {
+class CategoriesRepository implements ICategoriaRepository {
   private categories: Category[] = [];
 
   constructor() {
